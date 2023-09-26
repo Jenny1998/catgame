@@ -51,14 +51,7 @@ prey.addEventListener("click", () => {
 });
 
 gameContainer.addEventListener("click", () => {
-  backgroundSound
-    .play()
-    .then(() => {
-      console.log("Audio playing");
-    })
-    .catch((error) => {
-      console.log("Playback failed: ", error);
-    });
+  backgroundSound.play();
 });
 
 setInterval(movePrey, 10);
