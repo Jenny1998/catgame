@@ -27,6 +27,13 @@ function changeDir() {
 }
 
 function movePrey() {
+  // check if prey is moving to the left, so the image need to be flipped
+  if (directionX > 0) {
+    prey.style.transform = 'scaleX(1)';
+  } else {
+    prey.style.transform = 'scaleX(-1)';
+  }
+
   posX += speedX * directionX;
   posY += speedY * directionY;
 
